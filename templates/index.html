@@ -1,0 +1,16 @@
+<html>
+<body>
+<form method="POST" action="/change">
+Email: <input type="text" name="email"  value={{email}}><br>
+Check Interval (in seconds): <input type="text" name="interval" value={{interval}}><br>
+Timeout (in seconds): <input type="text" name="timeout" value={{timeout}}><br>
+Health Threshold: <input type="text" name="hthreshold" value={{hthreshold}}><br>
+Unhealth Threshold: <input type="text" name="uthreshold" value={{uthreshold}}><br>
+<input type="submit" value="Alterar">
+</form>
+<form method="POST" action="/toggle">
+    <input type="submit" value={{running}}>
+</form>
+<a href="/rss">RSS Feed</a>
+</body>
+</html>
